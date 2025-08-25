@@ -42,7 +42,7 @@ A secure and robust **URL shortener** project designed for local development and
 
 ### 1) Install dependencies
 ```bash
-git clone <your-repo> url-shortener
+git clone git@github.com:rpuccine/stoik-shortener.git url-shortener
 cd url-shortener
 npm install
 ```
