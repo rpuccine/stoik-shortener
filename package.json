@@ -1,0 +1,21 @@
+{
+  "name": "url-shortener-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "engines": { "node": ">=22.18.0" },
+  "workspaces": ["client", "server"],
+  "scripts": {
+    "start": "concurrently -c auto -n server,client \"npm -w server run dev\" \"npm -w client start\"",
+    "dev": "npm start",
+    "build": "npm -w server run build && npm -w client run build",
+    "preview": "npm -w client run preview",
+    "test": "npm -w server test",
+    "lint": "npm -w server run lint && npm -w client run lint",
+    "format": "prettier -w .",
+    "setup": "npm install && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "prettier": "^3.3.3"
+  }
+}

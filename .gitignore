@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+.cache/
+.vite/
+coverage/
+
+# SQLite database
+server/data/*.db
+server/data/*.db-journal
+server/data/*.sqlite
+server/data/*.sqlite-journal
+
+# Env files (secrets/config)
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Jest
+jest-html-reporters-*.html
+coverage/
+
+# Misc
+*.log
