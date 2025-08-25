@@ -15,9 +15,9 @@ coverage/
 
 # SQLite database
 server/data/*.db
-server/data/*.db-journal
+server/data/*.db-*
 server/data/*.sqlite
-server/data/*.sqlite-journal
+server/data/*.sqlite-*
 
 # Env files (secrets/config)
 .env
